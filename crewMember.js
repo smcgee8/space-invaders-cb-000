@@ -4,14 +4,6 @@ class CrewMember {
     this.currentShip = "Looking for a Rig";
   }
 
-  currentShip() {
-    if(this.ship) {
-      return this.ship;
-    } else {
-      return "Looking for a Rig";
-    }
-  }
-
   engageWarpDrive() {
     if (this.position === "Pilot" && this.ship){
       return;
@@ -22,7 +14,7 @@ class CrewMember {
 
   setsInvisibility() {
     if (this.position === "Defender" && this.ship){
-      this.ship.cloaked = true;
+      this.currentShip.cloaked = true;
     } else {
       return "had no effect";
     }
