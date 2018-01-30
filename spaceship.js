@@ -6,13 +6,6 @@ class Spaceship {
     this.shields = shields;
     this.cloaked = false;
     this.warpDrive = 'disengaged';
-  }
-
-  docked() {
-    if(this.crew.length > 0) {
-      return false;
-    } else {
-      return true;
-    }
+    if(!this.crew) {this.docked = true;}
   }
 }
