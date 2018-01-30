@@ -5,7 +5,7 @@ class CrewMember {
   }
 
   engageWarpDrive() {
-    if (this.position === "Pilot" && this.ship){
+    if (this.position === "Pilot" && this.currentShip){
       return;
     } else {
       return "had no effect";
@@ -21,7 +21,7 @@ class CrewMember {
   }
 
   chargePhasers() {
-    if (this.position === "Gunner" && this.ship){
+    if (this.position === "Gunner" && this.currentShip){
       return;
     } else {
       return "had no effect";
