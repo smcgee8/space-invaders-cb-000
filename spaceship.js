@@ -4,5 +4,6 @@ class Spaceship {
     this.crew = crew;
     this.phasers = phasers;
     this.shields = shields;
+    this.cloaked = false;
   }
 }
