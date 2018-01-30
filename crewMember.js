@@ -20,11 +20,19 @@ class CrewMember {
   }
 
   setsInvisibility() {
-
+    if (this.position === "Defender" && this.ship){
+      return;
+    } else {
+      return "had no effect";
+    }
   }
 
   chargePhasers() {
-
+    if (this.position === "Gunner" && this.ship){
+      return;
+    } else {
+      return "had no effect";
+    }
   }
 
 }
