@@ -7,4 +7,10 @@ class Spaceship {
     this.cloaked = false;
     this.warpDrive = 'disengaged';
   }
+
+  docked() {
+    if(this.crew === []) {
+      return false;
+    }
+  }
 }
