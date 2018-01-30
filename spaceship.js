@@ -10,7 +10,7 @@ class Spaceship {
 
   docked() {
     if(this.crew === []) {
-      return false;
+      return true;
     }
   }
 }
