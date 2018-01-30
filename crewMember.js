@@ -10,4 +10,21 @@ class CrewMember {
       return "Looking for a Rig";
     }
   }
+
+  engageWarpDrive() {
+    if (this.position === "Pilot" && this.ship){
+      return;
+    } else {
+      return "had no effect";
+    }
+  }
+
+  setsInvisibility() {
+
+  }
+
+  chargePhasers() {
+
+  }
+
 }
