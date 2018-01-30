@@ -9,7 +9,9 @@ class Spaceship {
   }
 
   docked() {
-    if(!this.crew.length) {
+    if(this.crew.length > 0) {
+      return false;
+    } else {
       return true;
     }
   }
