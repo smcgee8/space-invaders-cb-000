@@ -6,7 +6,14 @@ class Spaceship {
     this.shields = shields;
     this.cloaked = false;
     this.warpDrive = 'disengaged';
-    if(this.crew.length === 0) {this.docked = true;} else {this.docked = false;}
     this.phasersCharge = 'uncharged';
+    if(this.crew.length === 0) {
+      this.docked = true;
+    } else {
+      this.docked = false;
+      this.crew.forEach( (e) => {
+        e.currentShip = this;
+      });
+    }
   }
 }
